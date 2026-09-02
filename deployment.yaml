@@ -12,10 +12,8 @@ spec:
       labels:
         app: nginx
     spec:
-      imagePullSecrets:
-       - name: dockerhub-secret
       containers:
       - name: nginx
-        image: nerdinyou/sample:36
+        image: nginx:latest
         ports:
         - containerPort: 80
